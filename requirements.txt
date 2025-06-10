@@ -1,0 +1,17 @@
+PyYAML
+requests
+rich
+tqdm
+psutil
+schedule
+aiohttp
+websockets
+pynput
+pyautogui
+watchdog
+numpy
+scikit-learn
+torch
+ujson
+cryptography
+pytest

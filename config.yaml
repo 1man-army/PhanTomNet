@@ -1,0 +1,28 @@
+﻿KeyLoggerX:
+  enabled: true
+  log_path: logs/keylog.txt
+  interval: 5
+
+PhantomLure_AI:
+  strategy: "decoy"
+  target: "data/captured"
+
+ReconRaptor:
+  enabled: true
+  scan_depth: 2
+  output_file: "logs/recon.txt"
+
+agent_comm:
+  relay_host: "localhost"
+  relay_port: 5555
+  protocol: "json"
+
+agent_logic:
+  run_order:
+    - ReconRaptor
+    - PhantomLure_AI
+    - KeyLoggerX
+
+state_manager:
+  type: "file"
+  file_path: "state.json"
